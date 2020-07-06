@@ -4,11 +4,13 @@ namespace game.models
 {
   class User
   {
+
     List<Item> inventory = new List<Item>();
     public string name { get; set; }
     public User(string Name)
     {
       name = Name;
+
     }
     public void addItem(Item item)
     {
