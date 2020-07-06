@@ -15,10 +15,12 @@ namespace game.models
       rooms.Add(r2);
       rooms.Add(r3);
       rooms.Add(r4);
+
     }
-    public List<Room> getRooms()
+    public string getRooms(int x, int y)
     {
-      return rooms;
+      if (ro)
+        return $"{rooms[2].x },{ rooms[2].y}";
     }
     private static Map instance = null;
     public static Map Instance

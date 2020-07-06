@@ -7,11 +7,13 @@ namespace game.models
   {
 
     List<Item> roomItems = new List<Item>();
-    public Vector2 location { get; set; }
-    public Room(int x, int y)
+    public int x { get; }
+    public int y { get; }
+    public Room(int X, int Y)
     {
-      Vector2 location = new Vector2(x, y);
-      Console.WriteLine("created room at: " + location.x + " " + location.y);
+      x = X;
+      y = Y;
+      Console.WriteLine("created room at: " + x + " " + y);
     }
     static public string getPaths()
     {

@@ -105,6 +105,9 @@ namespace game.run
                 (north){n}  (south){s}  (east){e}  (west){w} (cancel) {}");
       while (!validInput)
       {
+        Console.WriteLine($"currentLocation:  {playerLocation.x},{playerLocation.y}");
+        Console.WriteLine("Avalable paths: " + map.getRooms());
+        Console.ReadLine();
 
         string userInput = Console.ReadLine();
         switch (userInput)
